@@ -9,29 +9,35 @@ type Token struct {
 
 const (
 	ILLEGAL = "ILLEGAL"
-	EOF = "EOF"
+	EOF     = "EOF"
+
 	// Identifiers + literals
 	IDENT = "IDENT" // add, foobar, x, y, ...
-	INT = "INT"
-	// 1343456
+	INT   = "INT"   // 1343456
+
 	// Operators
-	ASSIGN= "="
-	PLUS= "+"
-	MINUS= "-"
-	BANG= "!"
+	ASSIGN   = "="
+	PLUS     = "+"
+	MINUS    = "-"
+	BANG     = "!"
 	ASTERISK = "*"
-	SLASH = "/"
+	SLASH    = "/"
+
 	LT = "<"
 	GT = ">"
-	EQ = "=="
+
+	EQ     = "=="
 	NOT_EQ = "!="
+
 	// Delimiters
-	COMMA = ","
+	COMMA     = ","
 	SEMICOLON = ";"
+
 	LPAREN = "("
 	RPAREN = ")"
 	LBRACE = "{"
 	RBRACE = "}"
+
 	// Keywords
 	FUNCTION = "FUNCTION"
 	LET      = "LET"
@@ -41,6 +47,7 @@ const (
 	ELSE     = "ELSE"
 	RETURN   = "RETURN"
 )
+
 
 var keywords = map[string]TokenType {
 	"fn": FUNCTION,
